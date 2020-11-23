@@ -10,6 +10,8 @@ class Student:
     def say_favourite_language(self, language):
         return(f"I love {language}")
 
+
+
     def student_has_name(student):
         return(student)
 
