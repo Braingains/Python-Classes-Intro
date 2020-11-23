@@ -2,25 +2,20 @@ class Team:
 
     def __init__(self, name, players, coach):
         self.name = name
-        self.players = []
+        self.players = players
         self.coach = coach
         self.points = 0
 
-    def add_player(self, name, players):
-        self.players.append(name)
+    def add_player(self, new_player):
+        self.players.append(new_player)
 
-    def has_player(self, name, players):
-        for player in players:
-            if name == players[name]:
-                return True
-            else: return False
+    def has_player(self, players):
+        return self.players.count(players)
 
-    def play_game(result):
-        if result == True:
+    def play_game(self, game_won):
+        if game_won:
             self.points += 3
 
 
-def team_has_name(name):
-    return name
 
-def team_has_players
+
